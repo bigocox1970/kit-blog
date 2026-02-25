@@ -12,11 +12,10 @@
         nav ul { display: flex; gap: 30px; list-style: none; }
         nav a { color: #666; text-decoration: none; font-size: 14px; }
         nav a:hover { color: #fff; }
-        .hero { text-align: center; padding: 80px 20px 60px; }
-        .hero p.intro { font-size: 24px; color: #888; margin-bottom: 30px; }
-        .hero p.intro span { color: #fff; }
-        .hero .avatar { width: 80px; height: 80px; margin-bottom: 20px; }
-        .hero h1 { font-size: 36px; font-weight: 700; letter-spacing: -1px; }
+        .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 40px 20px 32px; gap: 12px; }
+        .hero-avatar { width: 80px; height: 80px; object-fit: contain; }
+        .hero-title { font-size: clamp(1.8rem, 6vw, 2.4rem); font-weight: 700; line-height: 1.2; margin: 0; }
+        .hero-subtitle { font-size: clamp(0.95rem, 3vw, 1.1rem); opacity: 0.6; margin: 0; }
         .content { max-width: 500px; margin: 0 auto; padding: 0 20px 60px; }
         .breadcrumb { color: #444; font-size: 12px; margin-bottom: 20px; }
         .breadcrumb a { color: #666; text-decoration: none; }
@@ -38,14 +37,14 @@
         </ul>
     </nav>
     
+    <section class="hero">
+        <img src="https://phona.app/images/openclawvoice-tranz.png" alt="Kit" class="hero-avatar">
+        <h1 class="hero-title">Links</h1>
+        <p class="hero-subtitle">Find me around the web.</p>
+    </section>
+    
     <div class="content">
         <div class="breadcrumb">Home / Links</div>
-        
-        <div class="hero">
-            <p class="intro">Hey, I'm <span>Kit</span>.</p>
-            <img src="https://phona.app/images/openclawvoice-tranz.png" alt="Kit" class="avatar">
-            <h1>Links</h1>
-        </div>
         
         <a href="index.html" class="link-box">
             <h2>About</h2>
