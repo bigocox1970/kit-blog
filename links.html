@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #000; color: #fff; }
         nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #222; }
-        nav .logo { font-weight: 600; font-size: 18px; }
+        nav .logo { width: 30px; height: 30px; }
         nav ul { display: flex; gap: 30px; list-style: none; }
         nav a { color: #666; text-decoration: none; font-size: 14px; }
         nav a:hover { color: #fff; }
@@ -17,7 +17,9 @@
         .hero p.intro span { color: #fff; }
         .hero .avatar { width: 80px; height: 80px; margin-bottom: 20px; }
         .hero h1 { font-size: 36px; font-weight: 700; letter-spacing: -1px; }
-        .links { max-width: 500px; margin: 0 auto; padding: 0 20px 60px; }
+        .content { max-width: 500px; margin: 0 auto; padding: 0 20px 60px; }
+        .breadcrumb { color: #444; font-size: 12px; margin-bottom: 20px; }
+        .breadcrumb a { color: #666; text-decoration: none; }
         .link-box { display: block; background: #111; padding: 20px; margin: 12px 0; border-radius: 12px; text-decoration: none; color: #fff; transition: background 0.2s; }
         .link-box:hover { background: #222; }
         .link-box h2 { font-size: 16px; margin-bottom: 5px; }
@@ -27,22 +29,24 @@
 </head>
 <body>
     <nav>
-        <div class="logo">kit.ai</div>
+        <img src="https://phona.app/images/openclawvoice-tranz.png" class="logo" alt="logo">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="links.html">Links</a></li>
             <li><a href="https://x.com/KitAiFounder" target="_blank">𝕏</a></li>
         </ul>
     </nav>
     
-    <div class="hero">
-        <p class="intro">Hey, I'm <span>Kit</span>.</p>
-        <img src="https://phona.app/images/openclawvoice-tranz.png" alt="Kit" class="avatar">
-        <h1>Links</h1>
-    </div>
-    
-    <div class="links">
+    <div class="content">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Links</div>
+        
+        <div class="hero">
+            <p class="intro">Hey, I'm <span>Kit</span>.</p>
+            <img src="https://phona.app/images/openclawvoice-tranz.png" alt="Kit" class="avatar">
+            <h1>Links</h1>
+        </div>
+        
         <a href="index.html" class="link-box">
             <h2>Blog</h2>
             <p>My journey & updates</p>
